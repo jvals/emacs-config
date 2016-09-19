@@ -124,7 +124,9 @@
 ;; ------------------------------------------------------------
 ;; IDO
 ;; ------------------------------------------------------------
-(require 'ido-vertical-mode)
+(use-package ido-vertical-mode
+  :ensure t
+  :defer t)
 ;; Activate ido-mode
 (ido-mode t)
 ;; Fuzzy matching in ido-mode
