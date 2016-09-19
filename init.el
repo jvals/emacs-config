@@ -219,6 +219,9 @@
 ;; No scroll-bars
 (scroll-bar-mode -1)
 
+(use-package autopair
+  :ensure t
+  :defer t)
 ;; Pair up parenthesis and brackets
 (autopair-global-mode 1)
 ;; Surround a region with parenthesis, brackets, etc.
