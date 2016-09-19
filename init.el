@@ -41,6 +41,14 @@
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+
+
 
 ;; ------------------------------------------------------------
 ;; Not my shit
@@ -80,7 +88,7 @@
 ;; Ipython as default interpreter
 (defvar python-shell-interpreter "ipython")
 
-(require 'company)
+(use-package company)
 ;; Activate anaconda, eldoc and company for python
 (add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'eldoc-mode)
