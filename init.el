@@ -88,7 +88,9 @@
 ;; Ipython as default interpreter
 (defvar python-shell-interpreter "ipython")
 
-(use-package company)
+(use-package company
+  :ensure t
+  :defer t)
 ;; Activate anaconda, eldoc and company for python
 (add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'eldoc-mode)
@@ -101,14 +103,21 @@
     (add-to-list 'company-backends 'company-anaconda)
     (add-to-list 'company-backends 'company-c-headers)))
 
+;; Global company mode
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; Company completion
+;;(global-set-key "\t" 'company-complete-common)
+(setq company-idle-delay 0.1) 
+
 ;; ------------------------------------------------------------
 ;; C-mode
 ;; ------------------------------------------------------------
 
-(require 'cc-mode)
-(eval-after-load 'cc-mode
-  (setq-default c-basic-offset 4
-		indent-tabs-mode nil))
+;; (require 'cc-mode)
+;; (eval-after-load 'cc-mode
+;;   (setq-default c-basic-offset 4
+;; 		indent-tabs-mode nil))
 
 
 
@@ -201,18 +210,11 @@
 ;; Surround a region with parenthesis, brackets, etc.
 (defvar autopair-autowrap t)
 
-;; Global company mode
-(add-hook 'after-init-hook 'global-company-mode)
-
 ;; Commands that work on regions now work on the current line if there is no region
 (whole-line-or-region-mode 1)
 
 ;; Relative line numbers
 ;; (global-relative-line-numbers-mode)
-
-;; Company completion
-;;(global-set-key "\t" 'company-complete-common)
-(setq company-idle-delay 0.1)
 
 ;; Set scroll step to 1
 (setq scroll-step 1)
