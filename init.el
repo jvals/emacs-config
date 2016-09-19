@@ -166,7 +166,9 @@
 ;; OpenWith
 ;; ------------------------------------------------------------
 
-(require 'openwith)
+(use-package openwith
+  :ensure t
+  :defer t)
 (openwith-mode t)
 ;; 'open' is a built-in command on osx, which opens a file with the default program
 (setq openwith-associations '(("\\.pdf\\'" "open -a /Applications/Skim.app " (file))))
