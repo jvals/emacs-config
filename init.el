@@ -48,6 +48,16 @@
 (eval-when-compile
   (require 'use-package))
 
+;; ------------------------------------------------------------
+;; Themes
+;; ------------------------------------------------------------
+(use-package monokai-theme
+  :ensure t
+  :defer t)
+
+(use-package material-theme
+  :ensure t
+  :defer t)
 
 
 ;; ------------------------------------------------------------
@@ -156,7 +166,9 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (eval-after-load 'flycheck
   '(progn
-     (require 'flycheck-google-cpplint)
+     (use-package flycheck-google-cpplint
+       :ensure t
+       :defer t)
      (flycheck-add-next-checker 'c/c++-cppcheck
                                 '(warning . c/c++-googlelint))))
 
@@ -204,6 +216,9 @@
 (global-auto-revert-mode 1)
 
 ;; Auto save files whenever focus is lost
+(use-package super-save
+  :ensure t
+  :defer t)
 (super-save-mode +1)
 
 (add-hook 'LaTeX-mode-hook (lambda ()
@@ -244,6 +259,11 @@
 
 ;; Deactivate menubar
 (menu-bar-mode 0)
+
+;; (use-package golden-ratio
+;;   :ensure t
+;;   :defer t)
+;; (golden-ratio-mode 1)
 
 (use-package desktop
   :ensure t
