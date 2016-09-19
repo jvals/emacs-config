@@ -177,7 +177,9 @@
 ;; God mode
 ;; ------------------------------------------------------------
 
-(require 'god-mode)
+(use-package god-mode
+  :ensure t
+  :defer t)
 ;; Doesn't really work in iterm
 (global-set-key (kbd "<escape>") 'god-mode-all)
 (global-set-key (kbd "^[ godmode") 'god-mode-all) ;; magic word set in iterm2 settings 
