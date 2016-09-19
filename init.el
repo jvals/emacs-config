@@ -228,6 +228,9 @@
 (defvar autopair-autowrap t)
 
 ;; Commands that work on regions now work on the current line if there is no region
+(use-package whole-line-or-region
+  :ensure t
+  :defer t)
 (whole-line-or-region-mode 1)
 
 ;; Relative line numbers
