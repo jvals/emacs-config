@@ -178,8 +178,8 @@
 ;; ------------------------------------------------------------
 
 (use-package god-mode
-  :ensure t
-  :defer t)
+  :ensure t)
+  ;;:defer t)
 ;; Doesn't really work in iterm
 (global-set-key (kbd "<escape>") 'god-mode-all)
 (global-set-key (kbd "^[ godmode") 'god-mode-all) ;; magic word set in iterm2 settings 
@@ -245,7 +245,9 @@
 ;; Deactivate menubar
 (menu-bar-mode 0)
 
-(require 'desktop)
+(use-package desktop
+  :ensure t
+  :defer t)
 ;; Save desktop
 (desktop-save-mode 1)
 (setq desktop-restore-frames t)
@@ -258,17 +260,21 @@
 ;;(defvar markdown-preview-style "http://thomasf.github.io/solarized-css/solarized-light.css")
 
 ;; Guide-key
-(require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r"))
-(guide-key-mode 1)
-(setq guide-key/recursive-key-sequence-flag t)
-(setq guide-key/popup-window-position 'bottom)
+;; (require 'guide-key)
+;; (setq guide-key/guide-key-sequence '("C-x r"))
+;; (guide-key-mode 1)
+;; (setq guide-key/recursive-key-sequence-flag t)
+;; (setq guide-key/popup-window-position 'bottom)
 
 ;; yasnippet
-(require 'yasnippet)
+(use-package yasnippet
+  :ensure t)
 (yas-global-mode 1)
 
 ;; Iedit
+(use-package iedit
+  :ensure t
+  :defer t)
 (define-key global-map (kbd "C-c ;") 'iedit-mode)
 
 ;; Flymake
@@ -300,10 +306,15 @@
 
 ;; Switch windows with C-o
 ;; (global-set-key (kbd "C-o") 'other-window)
-(require 'bind-key)
+(use-package bind-key
+  :ensure t
+  :defer t)
 (bind-key* "C-o" 'other-window)
 
 ;; Smex: Fuzzy Command pallette like sublime text
+(use-package smex
+  :ensure t
+  :defer t)
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
@@ -328,7 +339,7 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; Use hippie expand instead of dabbrev expand
-(global-set-key (kbd "M-/") 'hippie-expand)
+;;(global-set-key (kbd "M-/") 'hippie-expand)
 
 ;; Highlight parenthesis
 (show-paren-mode 1)
@@ -341,7 +352,9 @@
 (defvar calendar-longitude 10.4)
 (defvar calendar-latitude 63.4)
 (add-to-list 'load-path "~/.emacs.d/elpa/theme-changer-20130725.1919/")
-(require 'theme-changer)
+(use-package theme-changer
+  :ensure t
+  :defer t)
 ;; Change color based on window system and time of day
 (if (display-graphic-p)
     (change-theme 'material-light 'monokai)
