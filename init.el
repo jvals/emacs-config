@@ -365,7 +365,7 @@
 (show-paren-mode 1)
 
 ;; Set font (only works in GUI)
-(set-face-attribute 'default nil :family "source code pro")
+(set-face-attribute 'default nil :family "source code pro" :height 90)
 
 
 (defvar calendar-location-name "Trondheim, Sør-Trøndelag")
