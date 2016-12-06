@@ -259,6 +259,9 @@
 ;; No truncating lines
 (set-default 'truncate-lines t)
 
+;; Disable silent newline
+;; (setq mode-require-final-newline 0)
+
 ;; Automatically update files that are changed externally
 (global-auto-revert-mode 1)
 
