@@ -245,6 +245,14 @@
 ;; (add-hook 'global-hl-line-mode-hook 'set-hl-line-color-based-on-theme)
 
 ;; ------------------------------------------------------------
+;; expand-region
+;; ------------------------------------------------------------
+(use-package expand-region
+  :ensure t
+  :defer t)
+(global-set-key (kbd "C-i") 'er/expand-region)
+
+;; ------------------------------------------------------------
 ;; Misc
 ;; ------------------------------------------------------------
 
