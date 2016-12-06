@@ -256,6 +256,9 @@
 ;; Misc
 ;; ------------------------------------------------------------
 
+;; No truncating lines
+(set-default 'truncate-lines t)
+
 ;; Automatically update files that are changed externally
 (global-auto-revert-mode 1)
 
