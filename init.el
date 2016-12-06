@@ -224,6 +224,25 @@
 (use-package all-the-icons
   :ensure t)
 
+;; ------------------------------------------------------------
+;; hl-line
+;; ------------------------------------------------------------
+;; Highlight current line
+(use-package hl-line
+  :ensure t
+  :defer t)
+(if (display-graphic-p)
+    (global-hl-line-mode 1))
+;; (set-face-background 'hl-line "#3e4446")
+;; Nice hl-line for white background #ffb3a5
+;; (require 'color)
+;; (defun set-hl-line-color-based-on-theme ()
+;;   "Sets the hl-line face to have no foregorund and a background
+;;     that is 10% darker than the default face's background."
+;;   (set-face-attribute 'hl-line nil
+;;                       :foreground nil
+;;                       :background (color-darken-name (face-background 'default) 10)))
+;; (add-hook 'global-hl-line-mode-hook 'set-hl-line-color-based-on-theme)
 
 ;; ------------------------------------------------------------
 ;; Misc
