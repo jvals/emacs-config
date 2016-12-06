@@ -118,7 +118,7 @@
 
 ;; Company completion
 ;;(global-set-key "\t" 'company-complete-common)
-(setq company-idle-delay 0.1) 
+(setq company-idle-delay 0.1)
 
 ;; ------------------------------------------------------------
 ;; C-mode
