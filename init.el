@@ -76,17 +76,87 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   ["#272822" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
+ '(c-tab-always-indent t)
+ '(compilation-message-face (quote default))
  '(custom-safe-themes
    (quote
-    ("38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" default)))
+    ("cdbd0a803de328a4986659d799659939d13ec01da1f482d838b68038c1bb35e8" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "dbb643699e18b5691a8baff34c29d709a3ff9787f09cdae58d3c1bc085b63c25" "74278d14b7d5cf691c4d846a4bbf6e62d32104986f104c1e61f718f9669ec04b" "b0ab5c9172ea02fba36b974bbd93bc26e9d26f379c9a29b84903c666a5fde837" "e56ee322c8907feab796a1fb808ceadaab5caba5494a50ee83a13091d5b1a10c" "38ba6a938d67a452aeb1dada9d7cdeca4d9f18114e9fc8ed2b972573138d4664" default)))
+ '(fci-rule-color "#3E3D31")
  '(flycheck-c/c++-gcc-executable "gcc-6")
  '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint")
+ '(flycheck-checkers
+   (quote
+    (ada-gnat asciidoc c/c++-clang c/c++-gcc c/c++-cppcheck cfengine chef-foodcritic coffee coffee-coffeelint coq css-csslint d-dmd emacs-lisp emacs-lisp-checkdoc erlang eruby-erubis fortran-gfortran go-gofmt go-golint go-vet go-build go-test go-errcheck go-unconvert groovy haml handlebars haskell-stack-ghc haskell-ghc haskell-hlint html-tidy jade javascript-eslint javascript-jshint javascript-gjslint javascript-jscs javascript-standard json-jsonlint json-python-json less lua-luacheck lua perl perl-perlcritic php php-phpmd php-phpcs processing puppet-parser puppet-lint python-flake8 python-pylint python-pycompile r-lintr racket rpm-rpmlint markdown-mdl rst-sphinx rst ruby-rubocop ruby-rubylint ruby ruby-jruby rust-cargo rust sass scala scala-scalastyle scss-lint scss sh-bash sh-posix-dash sh-posix-bash sh-zsh sh-shellcheck slim slim-lint sql-sqlint tex-chktex tex-lacheck texinfo typescript-tslint verilog-verilator xml-xmlstarlet xml-xmllint yaml-jsyaml yaml-ruby c/c++-googlelint)))
+ '(flycheck-clang-include-path
+   (quote
+    ("/Users/jorgenvalstad/Dropbox/Datateknikk/9_semester/TDT4295/MCU/ytelse/usbhost/src/")))
+ '(flycheck-gcc-include-path
+   (quote
+    ("/usr/local/Cellar/libusb/1.0.20/include/libusb-1.0/")))
+ '(flycheck-gcc-includes
+   (quote
+    ("/usr/local/Cellar/libusb/1.0.20/include/libusb-1.0/libusb.h")))
  '(flycheck-gcc-language-standard "c11")
  '(flycheck-gcc-openmp t)
  '(flycheck-gcc-pedantic t)
  '(flycheck-gcc-pedantic-errors t)
  '(flycheck-googlelint-filter
-   "-legal/copyright, -readability/casting, -readability/todo, -runtime/threadsafe_fn"))
+   "-legal/copyright, -readability/casting, -readability/todo, -runtime/threadsafe_fn")
+ '(flycheck-googlelint-verbose 5)
+ '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
+ '(highlight-tail-colors
+   (quote
+    (("#3E3D31" . 0)
+     ("#67930F" . 20)
+     ("#349B8D" . 30)
+     ("#21889B" . 50)
+     ("#968B26" . 60)
+     ("#A45E0A" . 70)
+     ("#A41F99" . 85)
+     ("#3E3D31" . 100))))
+ '(hl-sexp-background-color "#efebe9")
+ '(ido-ignore-files
+   (quote
+    ("\\`CVS/" "\\`#" "\\`.#" "\\`\\.\\./" "\\`\\./" "\\\\.DS_Store")))
+ '(magit-diff-use-overlays nil)
+ '(nrepl-message-colors
+   (quote
+    ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+ '(package-selected-packages
+   (quote
+    (opencl-mode spacemacs-theme ggtags moe-theme cuda-mode writeroom-mode neotree git-gutter zenburn-theme xclip whole-line-or-region web-mode use-package undo-tree unbound twig-mode theme-changer super-save smooth-scrolling smooth-scroll smex slime relative-line-numbers php-auto-yasnippets openwith move-text monokai-theme material-theme markdown-preview-mode magit linum-relative leuven-theme iedit ido-vertical-mode hippie-expand-slime guide-key goto-chg google-c-style golden-ratio god-mode gitconfig-mode flymake-google-cpplint flymake-cursor flycheck-google-cpplint flx-ido fill-column-indicator django-snippets django-mode company-web company-php company-c-headers company-anaconda cmake-mode bison-mode autopair auctex aggressive-indent ace-jump-mode)))
+ '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
+ '(pos-tip-background-color "#A6E22E")
+ '(pos-tip-foreground-color "#272822")
+ '(same-window-buffer-names (quote ("\"*compile*\"")))
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#F92672")
+     (40 . "#CF4F1F")
+     (60 . "#C26C0F")
+     (80 . "#E6DB74")
+     (100 . "#AB8C00")
+     (120 . "#A18F00")
+     (140 . "#989200")
+     (160 . "#8E9500")
+     (180 . "#A6E22E")
+     (200 . "#729A1E")
+     (220 . "#609C3C")
+     (240 . "#4E9D5B")
+     (260 . "#3C9F79")
+     (280 . "#A1EFE4")
+     (300 . "#299BA6")
+     (320 . "#2896B5")
+     (340 . "#2790C3")
+     (360 . "#66D9EF"))))
+ '(vc-annotate-very-old-color nil)
+ '(weechat-color-list
+   (unspecified "#272822" "#3E3D31" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0")))
 
 
 
