@@ -382,7 +382,13 @@
 (use-package bind-key
   :ensure t
   :defer t)
-(bind-key* "C-o" 'other-window)
+
+;; swindow cycles windows on all frames.
+(defun swindow()
+  (interactive)
+  (other-window 1 t)
+  (select-frame-set-input-focus (selected-frame)))
+(bind-key* "C-o" 'swindow)
 
 ;; Smex: Fuzzy Command pallette like sublime text
 (use-package smex
