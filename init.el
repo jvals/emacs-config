@@ -208,6 +208,22 @@
   :defer t)
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; ------------------------------------------------------------
+;; Neotree
+;; ------------------------------------------------------------
+(use-package neotree
+  :ensure t
+  :defer t)
+(global-set-key [f8] 'neotree-toggle)
+;; When the neotree window is opened, find current file and jump to node.
+(setq neo-smart-open t)
+
+;; ------------------------------------------------------------
+;; All The Icons
+;; ------------------------------------------------------------
+(use-package all-the-icons
+  :ensure t)
+
 
 ;; ------------------------------------------------------------
 ;; Misc
