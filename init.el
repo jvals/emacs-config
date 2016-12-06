@@ -328,7 +328,7 @@
 (setq desktop-restore-forces-onscreen nil)
 
 ;; Activate markdown-preview-mode
-(add-hook 'markdown-mode-hook 'markdown-preview-mode)
+;; (add-hook 'markdown-mode-hook 'markdown-preview-mode)
 ;; Color theme for markdown preview
 ;;(defvar markdown-preview-style "http://thomasf.github.io/solarized-css/solarized-light.css")
 
