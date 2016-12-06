@@ -163,12 +163,13 @@
 (use-package flycheck
   :ensure t
   :defer t)
+(use-package flycheck-google-cpplint
+  :ensure t
+  :defer t)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (eval-after-load 'flycheck
   '(progn
-     (use-package flycheck-google-cpplint
-       :ensure t
-       :defer t)
+     (require 'flycheck-google-cpplint)
      (flycheck-add-next-checker 'c/c++-cppcheck
                                 '(warning . c/c++-googlelint))))
 
