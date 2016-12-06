@@ -210,6 +210,9 @@
 ;; Activate ido-mode
 (ido-mode t)
 ;; Fuzzy matching in ido-mode
+(use-package flx-ido
+  :ensure t
+  :defer t)
 (flx-ido-mode 1)
 ;; Vertical ido-mode
 (ido-vertical-mode)
