@@ -351,7 +351,7 @@
 
 (bind-key* "C-c RET" 'compile)
 
-;; Undo key 
+;; Undo key
 (global-set-key (kbd "C--") 'undo)
 
 ;; No scroll-bars
