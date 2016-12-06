@@ -262,6 +262,9 @@
 ;; Disable silent newline
 ;; (setq mode-require-final-newline 0)
 
+;; workaround: ansi-term + yasnippet + tab = Wrong type argument: characterp, tab
+(add-hook 'term-mode-hook (lambda () (yas-minor-mode -1)))
+
 ;; Automatically update files that are changed externally
 (global-auto-revert-mode 1)
 
