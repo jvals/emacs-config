@@ -195,7 +195,7 @@
   ;;:defer t)
 ;; Doesn't really work in iterm
 (global-set-key (kbd "<escape>") 'god-mode-all)
-(global-set-key (kbd "^[ godmode") 'god-mode-all) ;; magic word set in iterm2 settings 
+;; (global-set-key (kbd "^[ godmode") 'god-mode-all) ;; magic word set in iterm2 settings
 (define-key god-local-mode-map (kbd ".") 'repeat)
 (define-key god-local-mode-map (kbd "z") 'repeat)
 
