@@ -128,7 +128,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (opencl-mode spacemacs-theme ggtags moe-theme cuda-mode writeroom-mode neotree git-gutter zenburn-theme xclip whole-line-or-region web-mode use-package undo-tree unbound twig-mode theme-changer super-save smooth-scrolling smooth-scroll smex slime relative-line-numbers php-auto-yasnippets openwith move-text monokai-theme material-theme markdown-preview-mode magit linum-relative leuven-theme iedit ido-vertical-mode hippie-expand-slime guide-key goto-chg google-c-style golden-ratio god-mode gitconfig-mode flymake-google-cpplint flymake-cursor flycheck-google-cpplint flx-ido fill-column-indicator django-snippets django-mode company-web company-php company-c-headers company-anaconda cmake-mode bison-mode autopair auctex aggressive-indent ace-jump-mode)))
+    (which-key opencl-mode spacemacs-theme ggtags moe-theme cuda-mode writeroom-mode neotree git-gutter zenburn-theme xclip whole-line-or-region web-mode use-package undo-tree unbound twig-mode theme-changer super-save smooth-scrolling smooth-scroll smex slime relative-line-numbers php-auto-yasnippets openwith move-text monokai-theme material-theme markdown-preview-mode magit linum-relative leuven-theme iedit ido-vertical-mode hippie-expand-slime guide-key goto-chg google-c-style golden-ratio god-mode gitconfig-mode flymake-google-cpplint flymake-cursor flycheck-google-cpplint flx-ido fill-column-indicator django-snippets django-mode company-web company-php company-c-headers company-anaconda cmake-mode bison-mode autopair auctex aggressive-indent ace-jump-mode)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
@@ -324,6 +324,13 @@
   :ensure t
   :defer t)
 (global-set-key (kbd "C-i") 'er/expand-region)
+
+;; ------------------------------------------------------------
+;; which-key
+;; ------------------------------------------------------------
+(use-package which-key
+  :ensure t
+  :config (which-key-mode))
 
 ;; ------------------------------------------------------------
 ;; Misc
