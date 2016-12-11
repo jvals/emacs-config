@@ -209,6 +209,7 @@
   :defer t)
 ;; Activate ido-mode
 (ido-mode t)
+(setq ido-everywhere t)
 ;; Fuzzy matching in ido-mode
 (use-package flx-ido
   :ensure t
