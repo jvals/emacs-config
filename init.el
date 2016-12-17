@@ -353,6 +353,10 @@
 ;; Misc
 ;; ------------------------------------------------------------
 
+;; winner-mode remembers window configs
+;; to switch, use C-c left and C-c right
+(winner-mode 1)
+
 ;; No truncating lines
 (set-default 'truncate-lines t)
 
