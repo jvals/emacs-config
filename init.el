@@ -358,7 +358,7 @@
 (winner-mode 1)
 
 ;; No truncating lines
-(set-default 'truncate-lines t)
+;; (set-default 'truncate-lines t)
 
 ;; Disable silent newline
 ;; (setq mode-require-final-newline 0)
