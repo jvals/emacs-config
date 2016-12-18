@@ -519,9 +519,6 @@
 ;; Use ibuffer when listing all buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;; Use hippie expand instead of dabbrev expand
-;;(global-set-key (kbd "M-/") 'hippie-expand)
-
 ;; Highlight parenthesis
 (show-paren-mode 1)
 
