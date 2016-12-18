@@ -483,12 +483,6 @@
 (setq mac-option-modifier nil)
 (setq mac-right-command-modifier 'meta)
 
-;; Recenter the screen when up or down is hit
-;; (setq recenter-redisplay nil)
-;; (global-set-key (kbd "<up>") (lambda () (interactive) (previous-line) (scroll-down-line)))
-;; (global-set-key (kbd "<down>") (lambda () (interactive) (next-line) (scroll-up-line)))
-;; Might not be as useful as I thought.
-
 ;; Switch windows with C-o
 ;; (global-set-key (kbd "C-o") 'other-window)
 (use-package bind-key
