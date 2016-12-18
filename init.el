@@ -361,6 +361,9 @@
 ;; Misc
 ;; ------------------------------------------------------------
 
+;; Kill this buffer instead of prompting
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
+
 ;; winner-mode remembers window configs
 ;; to switch, use C-c left and C-c right
 (winner-mode 1)
