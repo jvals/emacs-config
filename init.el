@@ -227,6 +227,7 @@
   :defer t)
 (global-set-key (kbd "C-c SPC") 'ace-jump-mode)
 (global-set-key (kbd "C-c c SPC") 'ace-jump-char-mode)
+(global-set-key (kbd "M-s") 'ace-jump-char-mode)
 (global-set-key (kbd "C-c c c SPC") 'ace-jump-line-mode)
 
 ;; ------------------------------------------------------------
