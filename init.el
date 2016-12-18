@@ -541,35 +541,6 @@
 
 (load-theme 'monokai)
 
-;; (defvar calendar-location-name "Trondheim, Sør-Trøndelag")
-;; (defvar calendar-longitude 10.4)
-;; (defvar calendar-latitude 63.4)
-;; (add-to-list 'load-path "~/.emacs.d/elpa/theme-changer-20130725.1919/")
-;; (use-package theme-changer
-;;   :ensure t)
-;; Change color based on window system and time of day
-;; (defun change_theme_if_no_theme()
-;;   (if (display-graphic-p)
-;;       (change-theme 'material-light 'monokai)
-;;     (load-theme 'monokai)))
-;; ;; FIX: This line needs to do the inverse of what it's doing now
-;; (add-hook 'desktop-after-read-hook 'change_theme_if_no_theme)
-
-;; ;; Helper for compilation. Close the compilation window if
-;; ;; there was no error at all.
-;; (defun compilation-exit-autoclose (status code msg)
-;;   ;; If M-x compile exists with a 0
-;;   (when (and (eq status 'exit) (zerop code))
-;;     ;; then bury the *compilation* buffer, so that C-x b doesn't go there
-;;     (bury-buffer)
-;;     ;; and delete the *compilation* window
-;;     (delete-window (get-buffer-window (get-buffer "*compilation*"))))
-;;   ;; Always return the anticipated result of compilation-exit-message-function
-;;   (cons msg code))
-;; ;; Specify my function (maybe I should have done a lambda function)
-;; (setq compilation-exit-message-function 'compilation-exit-autoclose)
-
-
 
 (provide 'init.el)
 ;;; init.el ends here
