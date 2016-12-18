@@ -453,8 +453,9 @@
 
 ;; yasnippet
 (use-package yasnippet
-  :ensure t)
-(yas-global-mode 1)
+  :ensure t
+  :defer t)
+(add-hook 'after-init-hook (yas-global-mode 1))
 
 ;; Iedit
 (use-package iedit
