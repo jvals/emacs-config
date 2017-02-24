@@ -351,6 +351,14 @@
 ;; Misc
 ;; ------------------------------------------------------------
 
+
+(defun insert-current-date ()
+  "Insert the current date."
+  (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
+(global-set-key (kbd "C-c d") 'insert-current-date)
+
+
 ;; Kill this buffer instead of prompting
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
 
