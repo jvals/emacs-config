@@ -1,4 +1,5 @@
-
+;;; package --- Summary
+;;; Commentary:
 ;;; Code:
 
 ;; Enable mouse mode, so you can use the mouse if need be
