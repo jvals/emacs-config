@@ -319,6 +319,13 @@
 ;; ------------------------------------------------------------
 
 
+(defun insert-time ()
+  "Insert the current time."
+  (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%H:%M)")))
+(global-set-key (kbd "C-c t") 'insert-time)
+
+
 (defun insert-current-date ()
   "Insert the current date."
   (interactive)
