@@ -506,6 +506,9 @@
 
 (load-theme 'monokai)
 
+;; Region color
+(custom-set-faces '(region ((t (:inherit highlight :background "dark olive green")))))
+
 
 (provide 'init.el)
 ;;; init.el ends here
