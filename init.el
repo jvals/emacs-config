@@ -254,10 +254,10 @@
 ;; ------------------------------------------------------------
 ;; expand-region
 ;; ------------------------------------------------------------
-;; (use-package expand-region
-;;   :ensure t
-;;   :defer t)
-;; (global-set-key (kbd "C-i") 'er/expand-region)
+(use-package expand-region
+  :ensure t
+  :defer t)
+(global-set-key (kbd "C-æ") 'er/expand-region)
 
 ;; ------------------------------------------------------------
 ;; which-key
