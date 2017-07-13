@@ -395,7 +395,8 @@
 (defvar tramp-default-method "ssh")
 
 ;; Deactivate menubar
-(menu-bar-mode 0)
+(if (display-graphic-p) nil
+    (menu-bar-mode 0))
 
 ;; (use-package golden-ratio
 ;;   :ensure t
