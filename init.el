@@ -99,7 +99,9 @@
 ;; ------------------------------------------------------------
 
 ;; Ipython as default interpreter
-(defvar python-shell-interpreter "ipython")
+;; (defvar python-shell-interpreter "ipython")
+(defvar python-shell-interpreter "python3")
+
 
 (use-package company
   :ensure t
