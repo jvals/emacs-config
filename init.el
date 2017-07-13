@@ -187,10 +187,10 @@
 (eval-after-load 'flycheck
   '(progn
      (require 'flycheck-google-cpplint)
-     (flycheck-add-next-checker 'c/c++-cppcheck
+     (flycheck-add-next-checker 'c/c++-gcc
                                 '(warning . c/c++-googlelint))))
 
-(setq-default flycheck-disabled-checkers '(c/c++-clang))
+;;(setq-default flycheck-disabled-checkers '(c/c++-clang))
 
 ;; ------------------------------------------------------------
 ;; OpenWith
