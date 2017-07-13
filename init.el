@@ -502,7 +502,7 @@
 (show-paren-mode 1)
 
 ;; Set font (only works in GUI)
-(set-face-attribute 'default nil :family "source code pro" :height 110)
+(set-face-attribute 'default nil :family "source code pro" :height 90)
 
 (load-theme 'monokai)
 
