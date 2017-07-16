@@ -387,6 +387,8 @@
 
 ;; Relative line numbers
 ;; (global-relative-line-numbers-mode)
+;; Current line shows the absolute line number
+(setq linum-relative-current-symbol "")
 
 ;; Set scroll step to 1
 (setq scroll-step 1)
