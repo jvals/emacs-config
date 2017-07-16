@@ -290,13 +290,13 @@
   :bind (("C-s" . swiper)))
 
 ;; ------------------------------------------------------------
-;; Transparency
+;; Transparrency
 ;; ------------------------------------------------------------
-(defun set-transparency (value)
-  "Set the transparency of the frame window."
-  (interactive "nSet the transparency value 0 - 100: ")
+(defun set-transparrency (value)
+  "Set the transparrency of the frame window."
+  (interactive "nSet the transparrency value 0 - 100: ")
   (set-frame-parameter (selected-frame) 'alpha value))
-(global-set-key (kbd "C-c C-t") 'set-transparency)
+(global-set-key (kbd "C-c C-t") 'set-transparrency)
 
 ;; ------------------------------------------------------------
 ;; Rainbow
