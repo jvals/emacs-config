@@ -520,5 +520,11 @@
   (interactive)
   (ansi-color-apply-on-region (point-min) (point-max)))
 (add-to-list 'auto-mode-alist '("\\.log\\'" . display-ansi-colors))
+
+;; Scons
+(setq auto-mode-alist
+      (cons '("SConstruct" . python-mode) auto-mode-alist))
+(setq auto-mode-alist
+      (cons '("SConscript" . python-mode) auto-mode-alist))
 (provide 'init.el)
 ;;; init.el ends here
