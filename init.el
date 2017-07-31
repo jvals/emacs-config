@@ -534,5 +534,8 @@
 (global-set-key (kbd "C-c f h l") 'hs-hide-level)    ;; code fold hide level
 (global-set-key (kbd "C-c f h b") 'hs-hide-block)    ;; code fold hide block
 (global-set-key (kbd "C-c f s b") 'hs-show-block)    ;; code fold show block
+
+;; pop tags
+(global-set-key (kbd "M-,") 'pop-tag-mark)
 (provide 'init.el)
 ;;; init.el ends here
