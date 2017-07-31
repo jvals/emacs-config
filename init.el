@@ -340,6 +340,8 @@
 ;; winner-mode remembers window configs
 ;; to switch, use C-c left and C-c right
 (winner-mode 1)
+(bind-key* "<C-left>" 'winner-undo)
+(bind-key* "<C-right>" 'winner-redo)
 
 ;; No truncating lines
 ;; (set-default 'truncate-lines t)
