@@ -596,5 +596,9 @@
 (global-set-key (kbd "C-s-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-s-<down>") 'shrink-window)
 (global-set-key (kbd "C-s-<up>") 'enlarge-window)
+
+;; Move to line
+(global-set-key (kbd "M-g") 'goto-line)
+
 (provide 'init.el)
 ;;; init.el ends here
