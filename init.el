@@ -40,6 +40,7 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
+(package-refresh-contents)
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
