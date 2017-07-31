@@ -512,6 +512,8 @@
 ;; Region color
 (custom-set-faces '(region ((t (:inherit highlight :background "dark olive green")))))
 
+(use-package glsl-mode
+  :ensure t)
 
 (provide 'init.el)
 ;;; init.el ends here
