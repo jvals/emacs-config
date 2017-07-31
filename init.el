@@ -512,7 +512,7 @@
   (progn
     (set-face-attribute 'default nil :family "Dejavu Sans Mono" :height 75))))
 
-(load-theme 'monokai)
+(load-theme 'monokai t)
 
 ;; Region color
 (custom-set-faces '(region ((t (:inherit highlight :background "dark olive green")))))
