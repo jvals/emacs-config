@@ -537,5 +537,29 @@
 
 ;; pop tags
 (global-set-key (kbd "M-,") 'pop-tag-mark)
+
+;; markerpen
+(add-to-list 'load-path "~/.emacs.d/markerpen")
+(load-library "markerpen")
+
+(defun markred ()
+  (interactive)
+  (markerpen-mark-region 1))
+
+(defun markyellow ()
+  (interactive)
+  (markerpen-mark-region 3))
+
+(defun markblue ()
+  (interactive)
+  (markerpen-mark-region 4))
+
+(defun markgreen ()
+  (interactive)
+  (markerpen-mark-region 11))
+
+(defun markclear ()
+  (interactive)
+  (markerpen-clear-region))
 (provide 'init.el)
 ;;; init.el ends here
