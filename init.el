@@ -309,9 +309,16 @@
   (setq clang-format-style "google"))
 
 ;; ------------------------------------------------------------
+;; multiple-cursors
+;; ------------------------------------------------------------
+(use-package multiple-cursors
+  :ensure t
+  :defer t
+  :bind (("C-7" . mc/edit-lines)))
+
+;; ------------------------------------------------------------
 ;; Misc
 ;; ------------------------------------------------------------
-
 
 (defun insert-time ()
   "Insert the current time."
