@@ -103,28 +103,21 @@
 ;; (defvar python-shell-interpreter "ipython")
 (defvar python-shell-interpreter "python3")
 
-
 (use-package company
   :ensure t
-  :defer t)
-;; Activate anaconda, eldoc and company for python
-(add-hook 'python-mode-hook 'anaconda-mode)
-(add-hook 'python-mode-hook 'eldoc-mode)
-(add-hook 'python-mode-hook 'company-mode)
-
-
-;; Add anaconda to company
-(eval-after-load "company"
- '(progn
-    (add-to-list 'company-backends 'company-anaconda)
-    (add-to-list 'company-backends 'company-c-headers)))
+  :bind ("C-;" . company-complete-common)
+  :config
+  (setq company-idle-delay 0.1))
 
 ;; Global company mode
 (add-hook 'after-init-hook 'global-company-mode)
+(eval-after-load "company"
+  '(progn
+  (add-to-list 'company-backends '(company-dabbrev-code company-gtags company-clang company-etags company-keywords))))
+  ;; (add-to-list 'company-backends '(company-dabbrev-code company-gtags company-clang company-etags company-keywords company-abbrev company-dabbrev))))
 
-;; Company completion
-;;(global-set-key "\t" 'company-complete-common)
-(setq company-idle-delay 0.1)
+(setq company-dabbrev-downcase nil)
+
 
 ;; ------------------------------------------------------------
 ;; C-mode
