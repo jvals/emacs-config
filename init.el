@@ -442,17 +442,6 @@
   :defer t)
 (define-key global-map (kbd "C-c ;") 'iedit-mode)
 
-;; Flymake
-;; (defun flymake_google_init ()
-;; 	(require 'flymake-google-cpplint)
-;; 	(custom-set-variables
-;; 		'(flymake-google-cpplint-command "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/bin/cpplint"))
-;; 	(flymake-google-cpplint-load)
-;; )
-;; (add-hook 'c-mode-hook 'flymake_google_init)
-;; ; start google-c-style with emacs
-;; (require 'google-c-style)
-;; (add-hook 'c-mode-common-hook 'google-set-c-style)
 
 ;; Set shell
 (defvar explicit-shell-file-name "/usr/local/bin/bash")
