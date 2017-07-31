@@ -398,7 +398,8 @@
 
 ;; Deactivate menubar
 (if (display-graphic-p) nil
-    (menu-bar-mode 0))
+  (menu-bar-mode 0))
+(menu-bar-mode 0)
 
 ;; (use-package golden-ratio
 ;;   :ensure t
