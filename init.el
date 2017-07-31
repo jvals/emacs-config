@@ -180,15 +180,15 @@
 (use-package flycheck
   :ensure t
   :defer t)
-(use-package flycheck-google-cpplint
-  :ensure t
-  :defer t)
-(add-hook 'after-init-hook #'global-flycheck-mode)
-(eval-after-load 'flycheck
-  '(progn
-     (require 'flycheck-google-cpplint)
-     (flycheck-add-next-checker 'c/c++-gcc
-                                '(warning . c/c++-googlelint))))
+;; (use-package flycheck-google-cpplint
+;;   :ensure t
+;;   :defer t)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
+;; (eval-after-load 'flycheck
+;;   '(progn
+;;      (require 'flycheck-google-cpplint)
+;;      (flycheck-add-next-checker 'c/c++-gcc
+;;                                 '(warning . c/c++-googlelint))))
 
 ;;(setq-default flycheck-disabled-checkers '(c/c++-clang))
 
