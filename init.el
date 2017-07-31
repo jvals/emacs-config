@@ -578,5 +578,12 @@
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 (display-time-mode 1)
+
+;; Tab width
+(setq-default tab-width 2)
+(setq-default c-basic-offset 2
+							tab-width 2
+							indent-tabs-mode nil)
+(c-set-offset 'substatement-open 0)
 (provide 'init.el)
 ;;; init.el ends here
