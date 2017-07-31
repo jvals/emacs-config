@@ -573,5 +573,10 @@
 (defun markclear ()
   (interactive)
   (markerpen-clear-region))
+
+;; Display time
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+(display-time-mode 1)
 (provide 'init.el)
 ;;; init.el ends here
