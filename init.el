@@ -515,5 +515,10 @@
 (use-package glsl-mode
   :ensure t)
 
+(require 'ansi-color)
+(defun display-ansi-colors ()
+  (interactive)
+  (ansi-color-apply-on-region (point-min) (point-max)))
+(add-to-list 'auto-mode-alist '("\\.log\\'" . display-ansi-colors))
 (provide 'init.el)
 ;;; init.el ends here
