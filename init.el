@@ -526,5 +526,13 @@
       (cons '("SConstruct" . python-mode) auto-mode-alist))
 (setq auto-mode-alist
       (cons '("SConscript" . python-mode) auto-mode-alist))
+;; hs-minor-mode
+(add-hook 'c++-mode-hook 'hs-minor-mode)
+(global-set-key (kbd "C-c f t") 'hs-toggle-hiding)   ;; code fold toggle
+(global-set-key (kbd "C-c f s a") 'hs-show-all)      ;; code fold show all
+(global-set-key (kbd "C-c f h a") 'hs-hide-all)      ;; code fold hide all
+(global-set-key (kbd "C-c f h l") 'hs-hide-level)    ;; code fold hide level
+(global-set-key (kbd "C-c f h b") 'hs-hide-block)    ;; code fold hide block
+(global-set-key (kbd "C-c f s b") 'hs-show-block)    ;; code fold show block
 (provide 'init.el)
 ;;; init.el ends here
