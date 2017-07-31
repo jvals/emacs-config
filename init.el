@@ -444,7 +444,14 @@
 
 
 ;; Set shell
-(defvar explicit-shell-file-name "/usr/local/bin/bash")
+(cond
+ ((string-equal system-type "darwin") ; Mac OS X
+  (progn
+    (defvar explicit-shell-file-name "/usr/local/bin/bash")))
+ ((string-equal system-type "gnu/linux") ; linux
+  (progn
+    (defvar explicit-shell-file-name "/bin/bash"))))
+
 
 ;; Set right option key as meta, and left to normal osx option-key
 ;; These bindings only work in the cocoa/GUI version of emacs
