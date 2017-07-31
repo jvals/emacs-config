@@ -249,7 +249,8 @@
 ;; ------------------------------------------------------------
 (use-package expand-region
   :ensure t
-  :defer t)
+  :defer t
+  :bind ("C-'" . er/expand-region))
 (global-set-key (kbd "C-æ") 'er/expand-region)
 
 ;; ------------------------------------------------------------
