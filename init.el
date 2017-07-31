@@ -76,6 +76,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(diredp-file-name ((t (:foreground "slate blue"))))
+ '(region ((t (:inherit highlight :background "dark olive green"))))
  '(swiper-match-face-2 ((t (:background "DarkOrchid4")))))
 
 (custom-set-variables
@@ -83,16 +85,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(asm-comment-char 35)
- '(custom-safe-themes
+ '(company-clang-arguments
    (quote
-    ("f78de13274781fbb6b01afd43327a4535438ebaeec91d93ebdbba1e3fba34d3c" default)))
- '(package-hidden-regexps (quote ("\\`@available")))
- '(package-selected-packages
-   (quote
-    (vue-mode projectile-mode yaml-mode projectile try org-bullets expand-region all-the-icons xclip whole-line-or-region unbound twig-mode super-save smooth-scroll smex rainbow-mode php-auto-yasnippets openwith opencl-mode linum-relative ido-vertical-mode hc-zenburn-theme guide-key goto-chg google-c-style golden-ratio god-mode ggtags flymake-google-cpplint flymake-cursor flycheck-google-cpplint flx-ido fill-column-indicator exec-path-from-shell cuda-mode company-web company-php company-c-headers company-anaconda cmake-mode bison-mode autopair auctex aggressive-indent ace-jump-mode))))
-
-
+    ("-I/home/jorval01/sdk/lunarg/VulkanSDK/1.0.49.0/x86_64/include"))))
 
 
 ;; ------------------------------------------------------------
