@@ -503,7 +503,8 @@
     (set-face-attribute 'default nil :family "source code pro" :height 110)))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
-    (set-face-attribute 'default nil :family "Office Code Pro" :height 75))))
+    ;;(set-face-attribute 'default nil :family "Office Code Pro" :height 75))))
+    (set-face-attribute 'default nil :family "Dejavu Sans Mono" :height 75))))
 
 (cond
  ((string-equal system-type "gnu/linux")
