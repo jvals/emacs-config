@@ -595,6 +595,14 @@
 (global-set-key (kbd "C-s-<down>") 'shrink-window)
 (global-set-key (kbd "C-s-<up>") 'enlarge-window)
 
+(cond
+ ((string-equal system-type "gnu/linux")
+  (progn
+    (global-set-key (kbd "C-s-;") 'shrink-window-horizontally)
+    (global-set-key (kbd "C-s-#") 'enlarge-window-horizontally)
+    (global-set-key (kbd "C-s-[") 'shrink-window)
+    (global-set-key (kbd "C-s-'") 'enlarge-window))))
+
 ;; Move to line
 (global-set-key (kbd "M-g") 'goto-line)
 
