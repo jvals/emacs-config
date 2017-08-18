@@ -611,5 +611,9 @@
 (add-hook 'c-mode-hook
           (lambda () (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
 
+;; Markdown mode
+(use-package markdown-mode
+  :ensure t)
+
 (provide 'init.el)
 ;;; init.el ends here
