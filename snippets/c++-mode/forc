@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: forc
+# key: forc
+# --
+for (const auto& ${1:element} : ${3:vector}) {
+    $0
+}
