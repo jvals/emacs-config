@@ -460,7 +460,8 @@
 (bind-key* "C-o" 'swindow)
 (defun sswindow()
   (interactive)
-  (other-window -1 t))
+  (other-window -1 t)
+  (select-frame-set-input-focus (selected-frame)))
 (keyboard-translate ?\C-i ?\H-i)
 (bind-key* "H-i" 'sswindow)
 
