@@ -77,7 +77,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(diredp-file-name ((t (:foreground "slate blue"))))
- '(region ((t (:inherit highlight :background "dark olive green"))))
  '(swiper-match-face-2 ((t (:background "DarkOrchid4")))))
 
 (custom-set-variables
@@ -521,7 +520,7 @@
 (load-theme 'monokai t)
 
 ;; Region color
-(custom-set-faces '(region ((t (:inherit highlight :background "dark olive green")))))
+(set-face-attribute 'region nil :background "dark olive green")
 
 (use-package glsl-mode
   :ensure t)
