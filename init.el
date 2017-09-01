@@ -617,5 +617,8 @@
 (use-package markdown-mode
   :ensure t)
 
+;; Indent html
+(setq sgml-basic-offset 4)
+
 (provide 'init.el)
 ;;; init.el ends here
