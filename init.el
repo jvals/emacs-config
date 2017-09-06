@@ -501,7 +501,7 @@
 (cond
  ((string-equal system-type "darwin") ; Mac OS X
   (progn
-    (set-face-attribute 'default nil :family "source code pro" :height 110)))
+    (set-face-attribute 'default nil :family "source code pro" :height 100)))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
     ;;(set-face-attribute 'default nil :family "Office Code Pro" :height 75))))
