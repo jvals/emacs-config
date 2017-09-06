@@ -620,5 +620,10 @@
 ;; Indent html
 (setq sgml-basic-offset 4)
 
+;; open this file
+(defun open-init ()
+    (interactive)
+    (find-file user-init-file))
+
 (provide 'init.el)
 ;;; init.el ends here
