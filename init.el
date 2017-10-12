@@ -593,18 +593,18 @@
 (add-hook 'c++-mode-hook 'smart-dash-mode)
 
 ;; Resize windows
-(global-set-key (kbd "C-s-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "C-s-<right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "C-s-<down>") 'shrink-window)
-(global-set-key (kbd "C-s-<up>") 'enlarge-window)
+(global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-S-<down>") 'shrink-window)
+(global-set-key (kbd "C-S-<up>") 'enlarge-window)
 
 (cond
  ((string-equal system-type "gnu/linux")
   (progn
-    (global-set-key (kbd "C-s-;") 'shrink-window-horizontally)
-    (global-set-key (kbd "C-s-#") 'enlarge-window-horizontally)
-    (global-set-key (kbd "C-s-[") 'shrink-window)
-    (global-set-key (kbd "C-s-'") 'enlarge-window))))
+    (global-set-key (kbd "C-S-;") 'shrink-window-horizontally)
+    (global-set-key (kbd "C-S-#") 'enlarge-window-horizontally)
+    (global-set-key (kbd "C-S-[") 'shrink-window)
+    (global-set-key (kbd "C-S-'") 'enlarge-window))))
 
 ;; Move to line
 (global-set-key (kbd "M-g") 'goto-line)
