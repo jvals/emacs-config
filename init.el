@@ -516,11 +516,11 @@
     ;;(set-face-attribute 'default nil :family "Office Code Pro" :height 75))))
     (set-face-attribute 'default nil :family "Dejavu Sans Mono" :height 75))))
 
-(cond
- ((string-equal system-type "gnu/linux")
-  (progn
-    (setq monokai-background "#1c1c1c")
-    (setq monokai-256-background "#1c1c1c"))))
+;; (cond
+;;  ((string-equal system-type "gnu/linux")
+(progn
+  (setq monokai-background "#1c1c1c")
+  (setq monokai-256-background "#1c1c1c"))
 
 (load-theme 'monokai t)
 
