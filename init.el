@@ -602,10 +602,10 @@
 (add-hook 'c++-mode-hook 'smart-dash-mode)
 
 ;; Resize windows
-(global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "C-S-<down>") 'shrink-window)
-(global-set-key (kbd "C-S-<up>") 'enlarge-window)
+(global-set-key (kbd "s-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "s-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "s-<down>") 'shrink-window)
+(global-set-key (kbd "s-<up>") 'enlarge-window)
 
 (cond
  ((string-equal system-type "gnu/linux")
