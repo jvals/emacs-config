@@ -68,20 +68,6 @@
 
 
 ;; ------------------------------------------------------------
-;; Not my shit
-;; ------------------------------------------------------------
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-clang-arguments
-   (quote
-    ("-I/home/jorval01/sdk/lunarg/VulkanSDK/1.0.49.0/x86_64/include"))))
-
-
-;; ------------------------------------------------------------
 ;; Python
 ;; ------------------------------------------------------------
 
