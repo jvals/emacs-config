@@ -310,6 +310,10 @@
 ;; Misc
 ;; ------------------------------------------------------------
 
+;; Redirect customize to separate file
+(setq custom-file "~/.emacs.d/custom.el")
+;; (load custom-file :noerror)
+
 (defun insert-time ()
   "Insert the current time."
   (interactive)
