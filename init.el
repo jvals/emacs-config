@@ -501,10 +501,10 @@
 
 ;; Use arrow keys for window movement
 ;; (windmove-default-keybindings)
-(global-set-key (kbd "<left>")  'windmove-left)
-(global-set-key (kbd "<right>") 'windmove-right)
-(global-set-key (kbd "<up>")    'windmove-up)
-(global-set-key (kbd "<down>")  'windmove-down)
+;; (global-set-key (kbd "<left>")  'windmove-left)
+;; (global-set-key (kbd "<right>") 'windmove-right)
+;; (global-set-key (kbd "<up>")    'windmove-up)
+;; (global-set-key (kbd "<down>")  'windmove-down)
 
 
 ;; Bind C-x C-k to kill buffer
