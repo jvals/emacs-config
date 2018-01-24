@@ -479,8 +479,11 @@
   (interactive)
   (other-window -1 t)
   (select-frame-set-input-focus (selected-frame)))
-(keyboard-translate ?\C-i ?\H-i)
-(bind-key* "H-i" 'sswindow)
+(if (display-graphic-p)
+    (progn
+      (keyboard-translate ?\C-i ?\H-i)
+      (bind-key* "H-i" 'sswindow)))
+
 
 ;; Smex: Fuzzy Command pallette like sublime text
 (use-package smex
