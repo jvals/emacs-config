@@ -669,5 +669,9 @@
     (interactive)
     (find-file user-init-file))
 
+;; Restart emacs
+(use-package restart-emacs
+  :ensure t)
+
 (provide 'init.el)
 ;;; init.el ends here
