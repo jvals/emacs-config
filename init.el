@@ -664,6 +664,9 @@
 ;; Indent html
 (setq sgml-basic-offset 2)
 
+;; C comment style
+(add-hook 'c-mode-hook (lambda () (setq comment-start "//"
+                                        comment-end "")))
 
 ;; open this file
 (defun open-init ()
