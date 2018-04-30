@@ -669,6 +669,9 @@
     (interactive)
     (find-file user-init-file))
 
+;; Enable upcase-region
+(put 'upcase-region 'disabled nil)
+
 ;; Restart emacs
 (use-package restart-emacs
   :ensure t)
