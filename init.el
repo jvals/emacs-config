@@ -680,5 +680,8 @@
 (use-package restart-emacs
   :ensure t)
 
+;; Keybinding for bury-buffer
+(global-set-key (kbd "C-c q") 'bury-buffer)
+
 (provide 'init.el)
 ;;; init.el ends here
