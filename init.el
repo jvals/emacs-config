@@ -662,7 +662,8 @@
   :ensure t)
 
 ;; Indent html
-(setq sgml-basic-offset 4)
+(setq sgml-basic-offset 2)
+
 
 ;; open this file
 (defun open-init ()
