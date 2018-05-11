@@ -683,5 +683,8 @@
 ;; Keybinding for bury-buffer
 (global-set-key (kbd "C-c q") 'bury-buffer)
 
+;; Overwrite regions
+(delete-selection-mode 1)
+
 (provide 'init.el)
 ;;; init.el ends here
