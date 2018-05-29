@@ -438,14 +438,13 @@
 ;;   :defer t)
 ;; (golden-ratio-mode 1)
 
-;; (use-package desktop
-;;   :ensure t
-;;   :defer t)
-;; ;; Save desktop
-;; (desktop-save-mode 1)
-;; (setq desktop-restore-frames t)
-;; (setq desktop-restore-in-current-display t)
-;; (setq desktop-restore-forces-onscreen nil)
+(use-package desktop
+  :ensure t)
+;; Save desktop
+(desktop-save-mode 1)
+(setq desktop-restore-frames t)
+(setq desktop-restore-in-current-display nil)
+(setq desktop-restore-forces-onscreen nil)
 
 ;; Activate markdown-preview-mode
 ;; (add-hook 'markdown-mode-hook 'markdown-preview-mode)
