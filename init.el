@@ -653,8 +653,8 @@
 (global-set-key (kbd "M-g") 'goto-line)
 
 ;; Remove trailing whitespace in c mode on save
-;; (add-hook 'c-mode-hook
-;;           (lambda () (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
+(add-hook 'c-mode-hook
+          (lambda () (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
 
 ;; Markdown mode
 (use-package markdown-mode
