@@ -475,7 +475,7 @@
 (cond
  ((string-equal system-type "darwin") ; Mac OS X
   (progn
-    (defvar explicit-shell-file-name "/usr/local/bin/bash")))
+    (defvar explicit-shell-file-name "/usr/local/bin/zsh")))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
     (defvar explicit-shell-file-name "/bin/bash"))))
