@@ -691,5 +691,8 @@
 ;; ignore escape key
 (global-set-key (kbd "<escape>") #'ignore)
 
+;; start server
+(server-start)
+
 (provide 'init.el)
 ;;; init.el ends here
