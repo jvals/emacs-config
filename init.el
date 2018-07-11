@@ -688,5 +688,8 @@
 ;; join lines
 (defun join-lines () (interactive) (let ((fill-column 999999)) (fill-paragraph nil)))
 
+;; ignore escape key
+(global-set-key (kbd "<escape>") #'ignore)
+
 (provide 'init.el)
 ;;; init.el ends here
