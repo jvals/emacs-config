@@ -685,5 +685,8 @@
 ;; Overwrite regions
 (delete-selection-mode 1)
 
+;; join lines
+(defun join-lines () (interactive) (let ((fill-column 999999)) (fill-paragraph nil)))
+
 (provide 'init.el)
 ;;; init.el ends here
