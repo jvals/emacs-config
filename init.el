@@ -629,6 +629,7 @@
 							tab-width 2
 							indent-tabs-mode nil)
 (c-set-offset 'substatement-open 0)
+(c-set-offset 'cpp-macro 0)
 
 ;; Smart-dash
 (add-to-list 'load-path "~/.emacs.d/smart-dash")
