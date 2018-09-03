@@ -612,28 +612,28 @@
 (global-set-key (kbd "M-,") 'pop-tag-mark)
 
 ;; markerpen
-(add-to-list 'load-path "~/.emacs.d/markerpen")
-(load-library "markerpen")
+;; (add-to-list 'load-path "~/.emacs.d/markerpen")
+;; (load-library "markerpen")
 
-(defun markred ()
-  (interactive)
-  (markerpen-mark-region 1))
+;; (defun markred ()
+;;   (interactive)
+;;   (markerpen-mark-region 1))
 
-(defun markyellow ()
-  (interactive)
-  (markerpen-mark-region 3))
+;; (defun markyellow ()
+;;   (interactive)
+;;   (markerpen-mark-region 3))
 
-(defun markblue ()
-  (interactive)
-  (markerpen-mark-region 4))
+;; (defun markblue ()
+;;   (interactive)
+;;   (markerpen-mark-region 4))
 
-(defun markgreen ()
-  (interactive)
-  (markerpen-mark-region 11))
+;; (defun markgreen ()
+;;   (interactive)
+;;   (markerpen-mark-region 11))
 
-(defun markclear ()
-  (interactive)
-  (markerpen-clear-region))
+;; (defun markclear ()
+;;   (interactive)
+;;   (markerpen-clear-region))
 
 ;; Display time
 (setq display-time-24hr-format t)
@@ -649,9 +649,9 @@
 (c-set-offset 'cpp-macro 0)
 
 ;; Smart-dash
-(add-to-list 'load-path "~/.emacs.d/smart-dash")
-(require 'smart-dash)
-(add-hook 'c++-mode-hook 'smart-dash-mode)
+;; (add-to-list 'load-path "~/.emacs.d/smart-dash")
+;; (require 'smart-dash)
+;; (add-hook 'c++-mode-hook 'smart-dash-mode)
 
 ;; Resize windows
 (global-set-key (kbd "s-<left>") 'shrink-window-horizontally)
