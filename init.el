@@ -49,11 +49,6 @@
 (eval-when-compile
   (require 'use-package))
 
-;; ------------------------------------------------------------
-;; Fix environment
-;; ------------------------------------------------------------
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
 
 ;; ------------------------------------------------------------
 ;; Themes
