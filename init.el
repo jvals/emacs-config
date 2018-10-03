@@ -565,7 +565,9 @@
 (cond
  ((string-equal system-type "darwin") ; Mac OS X
   (progn
-    (set-face-attribute 'default nil :family "source code pro" :height 100)))
+    (if (> (x-display-pixel-width) 1680)
+        (set-face-attribute 'default nil :family "source code pro" :height 160)
+      (set-face-attribute 'default nil :family "source code pro" :height 100))))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
     (set-face-attribute 'default nil :family "Source Code Pro" :height 100))))
