@@ -352,6 +352,11 @@
 (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.s?css\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.json\\'" . web-mode))
+;; ------------------------------------------------------------
+;; Scala-mode
+;; ------------------------------------------------------------
+(use-package scala-mode
+  :ensure t)
 
 ;; ------------------------------------------------------------
 ;; Misc
