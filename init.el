@@ -145,12 +145,12 @@
   :defer t)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
-(setq-default flycheck-disabled-checkers '(c/c++-clang))
-(setq-default flycheck-c/c++-gcc-executable "/usr/local/bin/gcc-7")
-(setq-default flycheck-gcc-openmp 1)
-(setq-default flycheck-gcc-pedantic 1)
-(setq-default flycheck-gcc-warnings '("all"))
-(setq-default flycheck-gcc-language-standard "c11")
+;; (setq-default flycheck-disabled-checkers '(c/c++-clang))
+;; (setq-default flycheck-c/c++-gcc-executable "/usr/local/bin/gcc-7")
+;; (setq-default flycheck-gcc-openmp 1)
+;; (setq-default flycheck-gcc-pedantic 1)
+;; (setq-default flycheck-gcc-warnings '("all"))
+;; (setq-default flycheck-gcc-language-standard "c11")
 
 ;; (use-package flycheck-google-cpplint
 ;;   :ensure t
