@@ -715,6 +715,12 @@
 ;; ignore escape key
 (global-set-key (kbd "<escape>") #'ignore)
 
+;; Fix environment on macos so that GUI emacs inherits the path
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
+
 ;; start server
 (server-start)
 
