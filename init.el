@@ -562,17 +562,18 @@
 (show-paren-mode 1)
 
 ;; Set font (only works in GUI)
+(when window-system
 (cond
  ((string-equal system-type "darwin") ; Mac OS X
   (progn
     (if (> (x-display-pixel-width) 1680)
-        (set-face-attribute 'default nil :family "source code pro" :height 160)
+        (set-face-attribute 'default nil :family "source code pro" :height 100)
       (set-face-attribute 'default nil :family "source code pro" :height 100))))
  ((string-equal system-type "gnu/linux") ; linux
   (progn
     (set-face-attribute 'default nil :family "Source Code Pro" :height 100))))
     ;; (set-face-attribute 'default nil :family "Dejavu Sans Mono" :height 75))))
-
+)
 ;; (cond
 ;;  ((string-equal system-type "gnu/linux")
 (progn
