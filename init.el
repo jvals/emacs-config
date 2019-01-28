@@ -474,7 +474,7 @@
 (use-package desktop
   :ensure t)
 ;; Save desktop
-(desktop-save-mode 1)
+(desktop-save-mode 0)
 (setq desktop-restore-frames t)
 (setq desktop-restore-in-current-display nil)
 (setq desktop-restore-forces-onscreen nil)
