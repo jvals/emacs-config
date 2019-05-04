@@ -734,8 +734,12 @@
   :config
   (exec-path-from-shell-initialize))
 
+
 ;; Set dired size to human readable
 (setq dired-listing-switches "-alh")
+
+(use-package yaml-mode
+  :ensure t)
 
 ;; start server
 (server-start)
