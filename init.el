@@ -726,7 +726,7 @@
 (defun join-lines () (interactive) (let ((fill-column 999999)) (fill-paragraph nil)))
 
 ;; ignore escape key
-(global-set-key (kbd "<escape>") #'ignore)
+;; (global-set-key (kbd "<escape>") #'ignore)
 
 ;; Fix environment on macos so that GUI emacs inherits the path
 (use-package exec-path-from-shell
