@@ -741,6 +741,9 @@
 (use-package yaml-mode
   :ensure t)
 
+(use-package cmake-mode
+  :ensure t)
+
 ;; start server
 (server-start)
 
