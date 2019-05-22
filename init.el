@@ -734,6 +734,9 @@
   :config
   (exec-path-from-shell-initialize))
 
+;; Set dired size to human readable
+(setq dired-listing-switches "-alh")
+
 ;; start server
 (server-start)
 
