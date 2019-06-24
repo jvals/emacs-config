@@ -375,6 +375,22 @@
 (use-package company-lsp :ensure t)
 
 ;; ------------------------------------------------------------
+;; eshell
+;; ------------------------------------------------------------
+(defun shell-history ()
+  (interactive)
+  (let ((command (with-temp-buffer
+                   (insert-file-contents-literally "~/.histfile")
+                   (let ((history-list (reverse(split-string (buffer-string) "\n" t))))
+                     (ivy-read "Command: " history-list)))))
+    (when command
+      (insert command))))
+
+(add-hook 'eshell-mode-hook
+          (lambda ()
+            (define-key eshell-mode-map (kbd "M-r") 'shell-history)))
+
+;; ------------------------------------------------------------
 ;; Misc
 ;; ------------------------------------------------------------
 
@@ -752,3 +768,4 @@
 
 (provide 'init.el)
 ;;; init.el ends here
+(put 'erase-buffer 'disabled nil)
