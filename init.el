@@ -142,7 +142,10 @@
 ;; (require 'flycheck)
 (use-package flycheck
   :ensure t
-  :defer t)
+  :defer t
+  :config (setq flycheck-python-pycompile-executable "python3"))
+
+
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 ;; (setq-default flycheck-disabled-checkers '(c/c++-clang))
