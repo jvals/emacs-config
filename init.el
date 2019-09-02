@@ -200,6 +200,9 @@
   :defer t)
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; Use standard git path
+(setq magit-git-executable "/usr/bin/git")
+
 ;; ------------------------------------------------------------
 ;; Neotree
 ;; ------------------------------------------------------------
