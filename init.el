@@ -399,8 +399,8 @@
 ;; ------------------------------------------------------------
 ;; Vterm
 ;; ------------------------------------------------------------
-(require 'vterm)
-(define-key vterm-mode-map (kbd "C-c C-y") 'vterm-yank)
+;; (require 'vterm)
+;; (define-key vterm-mode-map (kbd "C-c C-y") 'vterm-yank)
 
 ;; ------------------------------------------------------------
 ;; Misc
